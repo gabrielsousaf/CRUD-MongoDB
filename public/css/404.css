@@ -1,0 +1,61 @@
+.wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number{
+    font-weight: 900;
+    font-size: 15rem;
+    line-height: 1;
+}
+
+.illustration{
+    position: relative;
+    width: 12.2rem;
+    margin: 0 2.1rem;
+}
+
+:where(.circle, .clip, .paper,
+.eyes, .eye, .cheeks, .mouth){
+    position: absolute;
+}
+
+.circle{
+    bottom: 0;
+    left: 0;
+    width: 12.2rem;
+    height: 11.4rem;
+    border-radius: 50%;
+    background-color: #293b49;
+}
+
+.clip{
+    bottom: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 12.2rem;
+    height: 13rem;
+    border-radius: 0 0 50% 50%;
+}
+
+.paper{
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9.2rem;
+    height: 12.4rem;
+    border: 0.3rem solid #293b49;
+    background-color: white;
+    border-radius: 0.8rem;
+}
