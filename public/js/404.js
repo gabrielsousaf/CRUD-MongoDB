@@ -13,17 +13,17 @@ class Particle {
     this.size = Math.random() * 5 + 1;
   }
 
-  draw() {
-    context.beginPath();
-    context.fillStyle = this.color;
-    context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    context.fill();
-  }
+draw() {
+  context.beginPath();
+  context.fillStyle = this.color;
+  context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+  context.fill();
+}
 
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-    this.size -= 0.05;
+update() {
+  this.x += this.vx;
+  this.y += this.vy;
+  this.size -= 0.05;
   }
 }
 
