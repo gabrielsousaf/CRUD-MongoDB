@@ -10,7 +10,7 @@
 
 # 📎 Instalação.
 
-	git https://github.com/gabrielsousaf/CRUD-MongoDB.git
+	git clone https://github.com/gabrielsousaf/CRUD-MongoDB.git
 	node app.js
 
 # ⚙ Descrição do Projeto.
