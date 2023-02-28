@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 const linkSchema = new mongoose.Schema({
-    title: {type:String, required:true},
-    description:String,
-    url:{type:String, required:true},
-    clicks:{type:Number, default:0}
+    name: {type:String, required:true},
+    endereco:String,
+    phone:{type:Number, required:true},
+    email:{type:String, required:true},
+
 })
 
 module.exports = mongoose.model('Link', linkSchema);

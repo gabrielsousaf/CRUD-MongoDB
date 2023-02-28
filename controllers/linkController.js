@@ -1,10 +1,10 @@
 const Link = require('../models/Link');
 
 const redirect = async (req, res, next) =>{
-    let title = req.params.title
+    let name = req.params.name
 
     try{
-        let doc = await Link.findOne({title})
+        let doc = await Link.findOne({name})
         console.log(doc)
         if(doc){
             res.redirect(doc.url)
@@ -15,6 +15,8 @@ const redirect = async (req, res, next) =>{
     }
     catch(error){
         res.send(error)
+        console.log(error)
+        
     }
 }
 
@@ -26,8 +28,7 @@ const addLink = async (req, res) =>{
         res.redirect('/')
     } catch(error){
         res.render('add', {error, body: req.body})
-
-
+        console.log(error)
     }
 }
 
@@ -70,10 +71,11 @@ const loadLink = async (req, res) =>{
 
 const editLink = async (req, res) =>{
     let link = {};
-    link.title = req.body.title;
-    link.description = req.body.description;
-    link.url = req.body.url;
-
+    link.name = req.body.name;
+    link.endereco = req.body.endereco;
+    link.phone = req.body.phone;
+    link.email = req.body.email;
+    
     let id = req.params.id;
     if (!id) {
         id = req.body.id;
@@ -84,6 +86,7 @@ const editLink = async (req, res) =>{
         res.redirect('/')  
     } catch(error){
         res.render('edit', { error, body: req.body })
+        console.log(error)
     }
 }
 
