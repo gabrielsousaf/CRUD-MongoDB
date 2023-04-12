@@ -28,3 +28,7 @@
 [![EXPRESS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](#)
 [![MONGO](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
 
+## 📝 Licença
+
+> Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
+
